@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #5c3a21;
+  margin-bottom: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff0e0;
+  padding: 15px 20px;
+  border-bottom: 2px solid #e0c5a0;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #a0522d;
+  text-decoration: none;
+}
+
+header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5c3a21;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #d2691e;
+  text-decoration: underline;
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: none;
+  color: #5c3a21;
+  font-size: 28px;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff5e6;
+  border: 2px solid #e0c5a0;
+  border-radius: 10px;
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+form {
+  background: #ffeedd;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #d2691e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #a0522d;
+}
+
+footer {
+  background: #f4e2d8;
+  text-align: center;
+  padding: 15px;
+  color: #5c3a21;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #fff0e0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+}
